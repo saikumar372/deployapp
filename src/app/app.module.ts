@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { MembersDetailViewComponent } from './members-detail-view/members-detail-view.component';
+import { UserListingComponent } from './user-listing/user-listing.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    MembersDetailViewComponent,
+    UserListingComponent
   ],
   imports: [
     BrowserModule,
