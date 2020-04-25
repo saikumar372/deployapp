@@ -10,6 +10,7 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { MembersDetailViewComponent } from './members-detail-view/members-detail-view.component';
 import { UserListingComponent } from './user-listing/user-listing.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UserListingComponent } from './user-listing/user-listing.component';
     FooterComponent,
     RegisterFormComponent,
     MembersDetailViewComponent,
-    UserListingComponent
+    UserListingComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,

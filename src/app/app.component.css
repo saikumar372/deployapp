@@ -49,4 +49,14 @@
     color: #039be5;
   }
   
-  
+  .loading {
+    background-image:  url(/assets/images/loader1.gif);
+    background-repeat: no-repeat;
+    background-position: center-top;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
