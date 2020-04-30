@@ -19,10 +19,10 @@ export class AdminDashboardComponent implements OnInit {
     if(!is_logged_in){
       this.router.navigate(['/admin/login'])
     }
-    var user_data =   JSON.parse(localStorage.getItem('user')) ;
-    this.user_count = (user_data == null)? 0 :user_data.length
-    var event_data =   JSON.parse(localStorage.getItem('Events')) ;
-    this.evnts_count = (event_data == null)? 0 :event_data.length
+    // var user_data =   JSON.parse(localStorage.getItem('user')) ;
+    // this.user_count = (user_data == null)? 0 :user_data.length
+    // var event_data =   JSON.parse(localStorage.getItem('Events')) ;
+    // this.evnts_count = (event_data == null)? 0 :event_data.length
   }
 
 }
