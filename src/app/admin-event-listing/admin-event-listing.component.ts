@@ -10,7 +10,6 @@ export class AdminEventListingComponent implements OnInit {
 
   
   events_data :any
-  id:any;
   constructor(private _Activatedroute:ActivatedRoute , private router: Router) { }
 
   ngOnInit(): void { 

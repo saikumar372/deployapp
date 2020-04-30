@@ -9,8 +9,6 @@ import { Router } from "@angular/router";
 })
 export class AdminDashboardComponent implements OnInit {
 
-  user_count :number;
-  evnts_count :number;
   
   constructor(private router: Router) { }
 
