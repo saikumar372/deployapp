@@ -47,7 +47,6 @@ export class RegisterFormComponent implements OnInit {
       stored_user_Data.push(this.myform.value)
     }
     localStorage.setItem('user', JSON.stringify(stored_user_Data));
-    this.router.navigate(['/user_listing'])
 
   }
   get f() { return this.myform.controls; }

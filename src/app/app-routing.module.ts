@@ -1,18 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomePageComponent } from './home-page/home-page.component';
-import { RegisterFormComponent } from './register-form/register-form.component';
-import { MembersDetailViewComponent } from './members-detail-view/members-detail-view.component';
-import { UserListingComponent } from './user-listing/user-listing.component';
-import { LoginPageComponent } from './login-page/login-page.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent },
-  { path: 'register', component: RegisterFormComponent },
-  { path: 'members', component: MembersDetailViewComponent },
-  { path: 'user_listing', component: UserListingComponent},
-  { path: 'login', component: LoginPageComponent},
   
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  }
+  
+  
+  // { path: '', component: HomePageComponent },
+  // { path: 'register', component: RegisterFormComponent },
+  // { path: 'members', component: MembersDetailViewComponent },
+  // { path: 'user_listing', component: UserListingComponent},
+  // { path: 'login', component: LoginPageComponent},
+  // { path: 'admin', component: AdminLayoutComponent},
+
 ];
 
 @NgModule({

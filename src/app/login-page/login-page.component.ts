@@ -5,8 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './login-page.component.html',
   styleUrls: [
     './login-page.component.css',
-    '../../assets/css/main.css',
-    '../../assets/css/util.css'
+    '../../assets/css/main.css'
   ]
 })
 export class LoginPageComponent implements OnInit {
