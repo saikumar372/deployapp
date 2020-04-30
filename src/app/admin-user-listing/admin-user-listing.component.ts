@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class AdminUserListingComponent implements OnInit {
 
   user_data :any;
-  no_data =false
   constructor(private router:Router) { }
 
   ngOnInit(): void {
@@ -19,7 +18,6 @@ export class AdminUserListingComponent implements OnInit {
     }
 
     this.user_data =JSON.parse(localStorage.getItem('user'))
-    this.no_data = (this.user_data == null)? true:false ;
   }
 
 }

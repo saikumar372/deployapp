@@ -11,7 +11,6 @@ export class AdminEventListingComponent implements OnInit {
   
   events_data :any
   id:any;
-  no_events = false;
   constructor(private _Activatedroute:ActivatedRoute , private router: Router) { }
 
   ngOnInit(): void { 
@@ -20,7 +19,6 @@ export class AdminEventListingComponent implements OnInit {
       this.router.navigate(['/admin/login'])
     }
     this.events_data =JSON.parse(localStorage.getItem('Events'));
-    this.no_events = (this.events_data == null)? true:false ;
   }
 
 }

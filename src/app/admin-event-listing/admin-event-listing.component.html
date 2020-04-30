@@ -18,7 +18,7 @@
                   <th>Event Type</th>
                   <th>Status</th>
               </thead>
-              <tbody *ngIf="!this.no_events">
+              <tbody >
                 <tr  *ngFor ="let data of events_data ;let i = index" [attr.data-index]="i">
                     <!-- <td routerLink="/admin/add-event/{{ i}}" >{{ i+1 }}</td> -->
                     <td [routerLink]="['/admin/add-event',i]" >{{ i+1 }}</td>
@@ -33,11 +33,6 @@
                         <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
                     </td> -->
                 </tr>
-            </tbody>
-            <tbody *ngIf="this.no_events">
-              <tr>
-                <td colspan="6" class="no_data">No Records Found</td>
-              </tr>
             </tbody>
             </table>
           </div>
